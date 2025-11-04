@@ -47,6 +47,8 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+     
 
         sun = new Circle();
         sun.changeColor("yellow");
@@ -54,13 +56,31 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.moveVertical(-20);
+        wall = new Square();
+        wall.moveHorizontal(-320);
+        wall.moveVertical(140);
+        wall.changeSize(520);
+        wall.makeVisible();
+        wall.changeColor("green");
+        sun.slowMoveVertical(250);
+        
+        wall = new Square();
+        wall.moveHorizontal(-320);
+        wall.moveVertical(150);
+        wall.changeSize(520);
+        wall.makeVisible();
+        wall.changeColor("green");
         
         moon = new Circle();
         moon.makeVisible();
+        moon.moveVertical(-350);
         moon.moveHorizontal(-70);
         moon.changeSize(40);
         moon.changeColor("magenta");
         moon.moveHorizontal(-100);
+        moon.slowMoveVertical(350);
+        
     }
 
     /**
