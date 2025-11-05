@@ -73,14 +73,71 @@ public class Picture
         wall.changeColor("green");
         
         moon = new Circle();
-        moon.makeVisible();
         moon.moveVertical(-350);
         moon.moveHorizontal(-70);
         moon.changeSize(40);
         moon.changeColor("magenta");
+        moon.makeVisible();
         moon.moveHorizontal(-100);
         moon.slowMoveVertical(350);
         
+        
+        
+    }
+    public void amancer()
+    {   
+        wall = new Square();
+        wall.moveHorizontal(-140);
+        wall.moveVertical(20);
+        wall.changeSize(120);
+        wall.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-120);
+        window.moveVertical(40);
+        window.changeSize(40);
+        window.makeVisible();
+
+        roof = new Triangle();  
+        roof.changeSize(60, 180);
+        roof.moveHorizontal(20);
+        roof.moveVertical(-60);
+        roof.makeVisible();
+        
+        wall = new Square();
+        wall.moveHorizontal(-320);
+        wall.moveVertical(140);
+        wall.changeSize(520);
+        wall.makeVisible();
+        wall.changeColor("green");
+        
+        wall = new Square();
+        wall.moveHorizontal(-320);
+        wall.moveVertical(150);
+        wall.changeSize(520);
+        wall.makeVisible();
+        wall.changeColor("green");
+        
+        
+        
+        moon.makeInvisible();
+        moon.moveVertical(-40);
+        moon.moveHorizontal(-70);
+        moon.changeSize(40);
+        moon.changeColor("magenta");
+        moon.moveHorizontal(-100);
+        moon.makeInvisible();
+        moon.slowMoveVertical(250);
+
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-350);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.moveVertical(50);
+        sun.slowMoveVertical(300);
     }
 
     /**
