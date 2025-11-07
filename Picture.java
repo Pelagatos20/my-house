@@ -133,12 +133,26 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-350);
+        sun.moveVertical(50);
         sun.changeSize(80);
         sun.makeVisible();
         sun.moveVertical(50);
-        sun.slowMoveVertical(300);
+        sun.slowMoveVertical(-100);
+        
+        Person Person1 = new Person();
+        Person1.moveVertical(30);
+        Person1.moveHorizontal(-190);
+        Person1.makeVisible();
+        Person1.slowMoveHorizontal(40);
+        
+        Person Person2 = new Person();
+        Person2.moveVertical(30);
+        Person2.moveHorizontal(200);
+        Person2.makeVisible();
+        Person2.slowMoveHorizontal(-140);
     }
+    
+    
 
     /**
      * Change this picture to black/white display
